@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="bootstrap.php"
+	colors="true" 
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    stopOnError="false"
+    stopOnFailure="false"
+    stopOnIncomplete="false"
+    stopOnSkipped="false">
+    <testsuites>
+        <testsuite name="test suite">
+            <directory suffix="Test.php">./PHPChardet</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+    	<whitelist>
+			<directory>../</directory>
+            <exclude>
+                <directory>../tests</directory>
+                <directory>../vendor</directory>
+            </exclude>
+    	</whitelist>
+    </filter>
+</phpunit>
