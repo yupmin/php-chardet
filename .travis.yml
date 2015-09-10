@@ -1,6 +1,6 @@
 language: php
 
-sudo: required
+sudo: false
 
 php:
   - 5.3.3
@@ -13,14 +13,13 @@ php:
   - hhvm
 
 before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install python-chardet
+  - ./install-chardet.sh
 
 install:
   - travis_retry composer install --no-interaction --prefer-source
 
 before_script:
-  - sh -c "mkdir -p ./build/logs"
+  - mkdir -p ./build/logs
 
 script:
   - vendor/bin/phpunit --configuration tests/phpunit.xml --coverage-clover build/logs/clover.xml
