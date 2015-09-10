@@ -16,7 +16,7 @@ PHP wrapper around the `chardet` command
 
 You should install [chardet](https://pypi.python.org/pypi/chardet):
 
-#### Using Pip:
+#### Using pip:
 
 ```bash
 sudo pip install chardet
