@@ -1,4 +1,4 @@
-# php-chardet
+# php-chardet [![Build Status](https://travis-ci.org/yupmin/php-chardet.svg?branch=master)](https://travis-ci.org/yupmin/php-chardet)
 
 ## Introduction
 
