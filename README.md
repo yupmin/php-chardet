@@ -1,4 +1,4 @@
-# php-chardet [![Build Status](https://travis-ci.org/yupmin/php-chardet.svg?branch=master)](https://travis-ci.org/yupmin/php-chardet)
+# php-chardet [![Build Status](https://travis-ci.org/yupmin/php-chardet.svg?branch=master)](https://travis-ci.org/yupmin/php-chardet) [![Coverage Status](https://coveralls.io/repos/yupmin/php-chardet/badge.svg?branch=master&service=github)](https://coveralls.io/github/yupmin/php-chardet?branch=master)
 
 ## Introduction
 
