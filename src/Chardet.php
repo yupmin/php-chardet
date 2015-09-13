@@ -8,7 +8,7 @@ use Yupmin\PHPChardet\ChardetOutputParser;
 class Chardet
 {
     /**
-     * $param $filePath
+     * @param $filePath
      */
     public function analyze($filePath)
     {

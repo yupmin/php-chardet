@@ -16,14 +16,16 @@ before_install:
   - ./install-chardet.sh
 
 install:
+  - travis_retry composer self-update && composer --version
   - travis_retry composer install --no-interaction --prefer-source
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 before_script:
   - mkdir -p ./build/logs
 
 script:
-  - vendor/bin/phpunit --configuration tests/phpunit.xml --coverage-clover build/logs/clover.xml
-  - vendor/bin/phpcs --standard=PSR2 src/
+  - vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+  - vendor/bin/phpcs --standard=PSR2 src/ tests/PHPChardet/
 
 after_script:
   - php vendor/bin/coveralls -v

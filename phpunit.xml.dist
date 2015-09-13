@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit bootstrap="bootstrap.php"
-	colors="true" 
+<phpunit bootstrap="tests/bootstrap.php"
+	colors="true"
     convertNoticesToExceptions="true"
     convertWarningsToExceptions="true"
     stopOnError="false"
@@ -10,15 +10,15 @@
     stopOnSkipped="false">
     <testsuites>
         <testsuite name="test suite">
-            <directory suffix="Test.php">./PHPChardet</directory>
+            <directory suffix="Test.php">./tests/PHPChardet</directory>
         </testsuite>
     </testsuites>
     <filter>
     	<whitelist>
-			<directory>../</directory>
+			<directory>./</directory>
             <exclude>
-                <directory>../tests</directory>
-                <directory>../vendor</directory>
+                <directory>./tests</directory>
+                <directory>./vendor</directory>
             </exclude>
     	</whitelist>
     </filter>
