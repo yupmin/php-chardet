@@ -2,8 +2,6 @@
 
 namespace Yupmin\PHPChardet;
 
-use Yupmin\PHPChardet\ChardetContainer;
-
 class ChardetContainerBuilder
 {
     /**
@@ -41,7 +39,7 @@ class ChardetContainerBuilder
     }
 
     /**
-     * @param string $confidence
+     * @param float $confidence
      */
     public function setConfidence($confidence)
     {

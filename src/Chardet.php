@@ -2,13 +2,11 @@
 
 namespace Yupmin\PHPChardet;
 
-use Yupmin\PHPChardet\ChardetCommandBuilder;
-use Yupmin\PHPChardet\ChardetOutputParser;
-
 class Chardet
 {
     /**
-     * @param $filePath
+     * @param string $filePath
+     * @return ChardetContainer
      */
     public function analyze($filePath)
     {

@@ -18,8 +18,8 @@ class ChardetCommandRunnerTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->filePath = __DIR__.'/../fixtures/chardet-input.txt';
-        $this->outputPath = __DIR__.'/../fixtures/chardet-output.txt';
+        $this->filePath = __DIR__ . '/../fixtures/chardet-input.txt';
+        $this->outputPath = __DIR__ . '/../fixtures/chardet-output.txt';
     }
 
     public function testRun()

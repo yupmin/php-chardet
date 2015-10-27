@@ -14,7 +14,7 @@ class ChardetCommandBuilderTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->filePath = __DIR__.'/../fixtures/chardet-input.txt';
+        $this->filePath = __DIR__ . '/../fixtures/chardet-input.txt';
     }
 
     /**

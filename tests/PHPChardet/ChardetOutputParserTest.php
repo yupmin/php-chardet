@@ -10,6 +10,7 @@ class ChardatOutputParserTest extends \PHPUnit_Framework_TestCase
     {
 
     }
+
     /**
      * @expectedException \Exception
      */

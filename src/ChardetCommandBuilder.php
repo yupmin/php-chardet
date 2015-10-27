@@ -2,11 +2,15 @@
 
 namespace Yupmin\PHPChardet;
 
-use Yupmin\PHPChardet\ChardetCommandRunner;
 use Symfony\Component\Filesystem\Filesystem;
 
 class ChardetCommandBuilder
 {
+    /**
+     * @param string $filePath
+     * @return ChardetCommandRunner
+     * @throws \Exception
+     */
     public function buildChardetCommandRunner($filePath)
     {
         $fileSystem = new Filesystem();

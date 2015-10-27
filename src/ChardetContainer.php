@@ -20,7 +20,7 @@ class ChardetContainer
     private $confidence;
 
     /**
-     * @return filepath
+     * @return string
      */
     public function getFilePath()
     {
@@ -28,7 +28,7 @@ class ChardetContainer
     }
 
     /**
-     * @return charset
+     * @return string
      */
     public function getCharset()
     {
@@ -60,7 +60,7 @@ class ChardetContainer
     }
 
     /**
-     * @param string $confidence
+     * @param float $confidence
      */
     public function setConfidence($confidence)
     {
