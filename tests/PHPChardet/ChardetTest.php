@@ -24,9 +24,9 @@ class ChardatTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->utf8FilePath = __DIR__.'/../fixtures/subtitle-utf8.srt';
-        $this->euckrFilePath = __DIR__.'/../fixtures/subtitle-euckr.srt';
-        $this->emptyFilePath = __DIR__.'/../fixtures/chardet-input.txt';
+        $this->utf8FilePath = __DIR__ . '/../fixtures/subtitle-utf8.srt';
+        $this->euckrFilePath = __DIR__ . '/../fixtures/subtitle-euckr.srt';
+        $this->emptyFilePath = __DIR__ . '/../fixtures/chardet-input.txt';
     }
 
     public function testAnalyzeUTF8()
@@ -61,6 +61,6 @@ class ChardatTest extends \PHPUnit_Framework_TestCase
     public function testAnalyzeEmpty()
     {
         $chardet = new Chardet();
-        $result = $chardet->analyze($this->emptyFilePath);
+        $chardet->analyze($this->emptyFilePath);
     }
 }
