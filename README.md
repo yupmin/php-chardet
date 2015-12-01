@@ -60,3 +60,4 @@ See `LICENSE` for more information
 
 ## Reference
 - [php-mediainfo](https://github.com/mhor/php-mediainfo)
+- [chardet](https://github.com/chardet/chardet)
